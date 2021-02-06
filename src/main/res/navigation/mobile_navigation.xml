@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.prevezene.mezunapp.ui.home.HomeFragment"
+        android:label="FSMBLM MEZUN AĞI"
+        tools:layout="@layout/fragment_blank" />
+
+    <fragment
+        android:id="@+id/kampus"
+        android:name="com.prevezene.mezunapp.ui.gallery.GalleryFragment"
+        android:label="KAMPÜSÜMÜZ"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+    android:id="@+id/mezunakaemisi"
+    android:name="com.prevezene.mezunapp.ui.slideshow.SlideshowFragment"
+    android:label="MEZUN AKADEMİSİ"
+    tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/hizmetler"
+        android:name="com.prevezene.mezunapp.mezunlarimiz"
+        android:label="MEZUNLARIMIZ"
+        tools:layout="@layout/fragment_mezunlarimiz" />
+    <fragment
+        android:id="@+id/haberler"
+        android:name="com.prevezene.mezunapp.fsmvu_paper"
+        android:label="HABERLER"
+        tools:layout="@layout/fragment_fsmvu_paper" />
+    <fragment
+        android:id="@+id/iletisim"
+        android:name="com.prevezene.mezunapp.ui.slideshow.SlideshowFragment"
+        android:label="İLETİŞİM"
+        tools:layout="@layout/fragment_slideshow" />
+
+</navigation>

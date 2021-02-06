@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_account_balance_24"
+            android:title="HOŞGELDİNİZ" />
+
+        <item
+            android:id="@+id/kampus"
+            android:icon="@drawable/ic_baseline_add_location_24"
+            android:title="KAMPÜSÜMÜZ" />
+
+        <item
+            android:id="@+id/hizmetler"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="MEZUNLARIMIZ" />
+        <item
+            android:id="@+id/haberler"
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="HABERLER" />
+        <item
+            android:id="@+id/iletisim"
+            android:icon="@drawable/ic_twotone_call_24"
+            android:title="İLETİŞİM" />
+
+    </group>
+</menu>

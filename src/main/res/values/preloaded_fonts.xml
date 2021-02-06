@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/adamina</item>
+        <item>@font/arbutus</item>
+        <item>@font/bad_script</item>
+        <item>@font/bad_scriptt</item>
+        <item>@font/cabin</item>
+        <item>@font/condiment</item>
+        <item>@font/contrail_one</item>
+        <item>@font/croissant_one</item>
+        <item>@font/lilita_one</item>
+        <item>@font/ranchers</item>
+    </array>
+</resources>

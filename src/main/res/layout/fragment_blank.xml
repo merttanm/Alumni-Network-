@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yemekhane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F3"
+    tools:context=".mezunPlatformu_Fragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/hikaye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </View>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="473dp"
+        android:layout_marginTop="4dp"
+        android:fadingEdge="vertical|none"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="409dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:background="#EFECEC"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="343dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawableRight="@drawable/ic_baseline_comment_24"
+                        android:drawableTint="#0B0A0A"
+                        android:text="DUYURULAR"
+                        android:textAlignment="viewStart"
+                        android:textColor="#0C0C0C"
+                        android:textSize="27dp"
+                        tools:ignore="RtlCompat" />
+
+
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/haber1"
+                        android:layout_width="339dp"
+                        android:layout_height="49dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:scrollbarSize="12dp"
+                        android:text="Digital Planet adlı teknoloji şirketi personel aramaktadır."
+                        android:textColor="#0E0E0E"
+                        android:textColorHint="#090909"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="OnClick" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="450dp"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:id="@+id/haber2"
+                        android:layout_width="344dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+                        android:clickable="true"
+
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:scrollbarSize="12dp"
+                        android:text="Yüksek lisans ve doktora başvurusu için son gün"
+                        android:textColor="#090909"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="OnClick" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="450dp"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:id="@+id/haber3"
+                        android:layout_width="347dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:scrollbarSize="12dp"
+                        android:text="İBB staj imkanları"
+                        android:textColor="#0E0E0E"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="OnClick" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar5"
+                android:layout_width="409dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EFECEC"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbar_title2"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="343dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="KAMPÜSÜMÜZDEN"
+                        android:textAlignment="viewStart"
+                        android:textColor="#0C0C0C"
+                        android:textSize="27dp"
+                        tools:ignore="RtlCompat" />
+
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <ViewFlipper
+                android:id="@+id/dfdf"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar6"
+                android:layout_width="409dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EFECEC"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbar_title3"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="343dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="BİZE ULAŞIN"
+                        android:textAlignment="viewStart"
+                        android:textColor="#0C0C0C"
+                        android:textSize="27dp"
+                        tools:ignore="RtlCompat" />
+
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="193dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/takiet" />
+
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ogrenciisleri"
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="41dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/facebook" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="       facebook"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/twitter"
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/twitterlogo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:text="   Twitter"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/instegram"
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="41dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/istegramlogo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:text=" instegram"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yemek"
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    tools:ignore="DuplicateIds">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="41dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_menu_book_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:text="  KÜTÜPHANE"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/obs"
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="41dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_assignment_ind_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:text="Programlar"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="62dp"
+                    android:layout_height="85dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/uzem"
+                            android:layout_width="74dp"
+                            android:layout_height="41dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_menu_book_24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:text="    UZEM"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
